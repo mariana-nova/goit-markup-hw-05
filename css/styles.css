@@ -28,18 +28,15 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.borde {
+  border-bottom: 1px solid #ececec;
+}
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-.cabecera-p {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #ececec;
 }
 
 .menu {
@@ -59,9 +56,7 @@ body {
 }
 .list {
   display: flex;
-}
-.list a {
-  margin-right: 50px;
+  gap: 50px;
 }
 
 a {
@@ -82,8 +77,10 @@ li {
   color: var(--brand-color);
   text-align: right;
   text-decoration: none;
-  letter-spacing: 0.03em;
-  margin: auto;
+  margin-right: 26px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  text-decoration: none;
 }
 .link a {
   font-weight: 500;
@@ -95,6 +92,9 @@ li {
   margin: auto;
   margin-right: 50px;
   letter-spacing: 0.02em;
+}
+.link a:last-child {
+  margin-right: 0;
 }
 .link {
   display: flex;
@@ -115,6 +115,8 @@ li {
 }
 .menu-list .link {
   position: relative;
+  text-align: center;
+  display: flex;
 }
 
 .link-contacts {
@@ -142,9 +144,8 @@ li {
 .list-prin:last-child {
   margin-right: 0;
 }
-.button:hover,
-.button:focus {
-  border: 1px solid var(--brand-color);
+.button:hover {
+  color: var(--text-color);
   cursor: pointer;
 }
 .link-contacts:hover .info-prin,
@@ -162,10 +163,10 @@ li {
   border-radius: 4px;
   text-align: center;
   justify-content: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   padding: 10px 32px;
   margin-left: 220px;
-  transition: 25oms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -187,6 +188,7 @@ li {
 .link-contacts:hover,
 .link-contacts:focus {
   color: var(--brand-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover {
   cursor: pointer;
@@ -194,7 +196,7 @@ li {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-main .title {
+.title {
   font-weight: 900;
   color: #ffffff;
   text-align: center;
@@ -204,9 +206,7 @@ main .title {
   initial-letter: 0.06em;
   letter-spacing: 0.06em;
   line-height: 1.363em;
-  text-transform: uppercase;
   width: 696px;
-  padding: 0;
   font-size: 44px;
 }
 .hero {
@@ -436,13 +436,13 @@ main .title {
   color: #ffffff;
   letter-spacing: 0.03em;
   background-color: rgba(33, 150, 243, 0.9);
-  padding-left: 24px;
-  padding-right: 24px;
   transition: height 250ms;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 0%;
   margin: 0;
   bottom: 0;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .text-content-images {
   position: relative;
@@ -461,6 +461,7 @@ main .title {
 }
 .img-port:hover > .text-content-images .data-cards {
   height: 100%;
+  padding-top: 62px;
 }
 .image-description {
   font-size: 14px;
@@ -568,8 +569,6 @@ address {
   fill: #ffffff;
   background-color: var(--brand-color);
   display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -601,6 +600,9 @@ address {
   fill: #afb1b8;
   padding: 12px 30px;
   box-sizing: content-box;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-clients:hover,
 .clients:hover {
@@ -635,7 +637,11 @@ address {
   fill: #ffffff;
   padding: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-redes-footer {
+  fill: #ffffff;
 }
 .icon-footer:last-child {
   margin-right: 0;

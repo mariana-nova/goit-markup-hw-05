@@ -17,40 +17,42 @@
     />
   </head>
   <body>
-    <header class="container cabecera">
-      <a class="logo" href="#">WebStudio</a>
-      <nav class="menu">
+    <div class="borde">
+      <header class="container cabecera">
+        <a class="logo" href="#">WebStudio</a>
+        <nav class="menu">
+          <ul class="list">
+            <li id="current" class="menu-list">
+              <a class="link current" href="./index.html">Estudio</a>
+            </li>
+            <li class="menu-list">
+              <a class="link portafolio" href="./portafolio.html">Portafolio</a>
+            </li>
+            <li class="menu-list">
+              <a class="link contacts" href="./contactos">contactos</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="list">
-          <li id="current" class="menu-list">
-            <a class="link current" href="./index.html">Estudio</a>
+          <li class="list-prin">
+            <a class="link-contacts" href="mailto:info@devstudio.com">
+              <svg class="info-prin" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
-          <li class="menu-list">
-            <a class="link portafolio" href="./portafolio.html">Portafolio</a>
-          </li>
-          <li>
-            <a class="link contacts" href="./contactos">contactos</a>
+          <li class="list-prin">
+            <a class="link-contacts" href="tel:+52 55 5529 6000">
+              <svg class="info-prin" width="10" height="16">
+                <use href="./images/icons.svg#icon-cell"></use>
+              </svg>
+              +52 55 5529 6000
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul class="list">
-        <li class="list-prin">
-          <a class="link-contacts" href="mailto:info@devstudio.com">
-            <svg class="info-prin" width="16" height="12">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="list-prin">
-          <a class="link-contacts" href="tel:+52 55 5529 6000">
-            <svg class="info-prin" width="10" height="16">
-              <use href="./images/icons.svg#icon-cell"></use>
-            </svg>
-            +52 55 5529 6000
-          </a>
-        </li>
-      </ul>
-    </header>
+      </header>
+    </div>
     <main>
       <section class="hero">
         <div class="container">
@@ -339,7 +341,7 @@
           <h2 class="our-team">clientes regulares</h2>
           <ul class="contenedor-clients">
             <li class="clients">
-              <a>
+              <a class="transition">
                 <svg class="icon-clients" width="106" height="53">
                   <use
                     class="logo"
@@ -349,7 +351,7 @@
               </a>
             </li>
             <li class="clients">
-              <a>
+              <a class="transition">
                 <svg class="icon-clients" width="106" height="53">
                   <use
                     class="logo"
@@ -359,7 +361,7 @@
               </a>
             </li>
             <li class="clients">
-              <a>
+              <a class="transition">
                 <svg class="icon-clients" width="106" height="53">
                   <use
                     class="logo"
@@ -369,7 +371,7 @@
               </a>
             </li>
             <li class="clients">
-              <a>
+              <a class="transition">
                 <svg class="icon-clients" width="106" height="53">
                   <use
                     class="logo"
@@ -445,7 +447,7 @@
             </li>
             <li class="icon-footer">
               <a>
-                <svg class="icon-redes-foote" width="20" height="20">
+                <svg class="icon-redes-footer" width="20" height="20">
                   <use
                     class="logo"
                     href="./images/icons.svg#icon-twitter"
@@ -455,7 +457,7 @@
             </li>
             <li class="icon-footer">
               <a>
-                <svg class="icon-redes-foote" width="20" height="20">
+                <svg class="icon-redes-footer" width="20" height="20">
                   <use
                     class="logo"
                     href="./images/icons.svg#icon-facebook"
@@ -465,7 +467,7 @@
             </li>
             <li class="icon-footer">
               <a>
-                <svg class="icon-redes-foote" width="20" height="20">
+                <svg class="icon-redes-footer" width="20" height="20">
                   <use
                     class="logo"
                     href="./images/icons.svg#icon-linkedin"
